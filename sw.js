@@ -10,9 +10,9 @@ workbox.core.setCacheNameDetails({
   runtime: 'run-time'
 });
 
-const FALLBACK_HTML_URL = '/offline.html';
+const FALLBACK_HTML_URL = 'https://www.romli.net/p/offline.html';
 const version = workbox.core.cacheNames.suffix;
-workbox.precaching.precacheAndRoute([{url: FALLBACK_HTML_URL, revision: null},{url: '/manifest.json', revision: null},{url: '/favicon.ico', revision: null}]);
+workbox.precaching.precacheAndRoute([{url: FALLBACK_HTML_URL, revision: null},{url: 'https://github.com/romliwenru/files/blob/master/manifest.json', revision: null},{url: 'https://www.romli.net/favicon.ico', revision: null}]);
 
 workbox.routing.setDefaultHandler(new workbox.strategies.NetworkOnly());
 
