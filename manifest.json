@@ -61,7 +61,7 @@ addEventListener("fetch", event => {
       },
     ],
   "serviceworker": {
-    "src": "/sw.js"
+    "src": "https://raw.githack.com/romliwenru/files/master/sw.js"
   }
   }
 
